@@ -33,7 +33,7 @@ Usage
 			$data = array("user_id"=>"3");
 
 			try {
-				$mavenapi_cmodel = MAVEN_API::create("users email","password")															->api("user.get",$data);
+				$mavenapi_cmodel = MAVEN_API::create("users email","password")->api("user.get",$data);
 			} catch(Exception $e) {
 				echo $e;
 			}
