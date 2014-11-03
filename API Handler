@@ -2,11 +2,11 @@ class MAVEN_API {
 
 		protected $_username 	= null;
 		protected $_password 	= null;
-		protected $_method 	 	= null;
-		protected $_host 	 	= null;
-		protected $_data		= null;
+		protected $_method 	= null;
+		protected $_host 	= null;
+		protected $_data	= null;
 
-		protected $_debug 		= false;
+		protected $_debug 	= false;
 
 		public function __construct($username,$password,$host) {
 
@@ -15,7 +15,7 @@ class MAVEN_API {
 			$this->_host 		= $host;
 
 		}
-		public static function create($username,$password,$host="http://whitefire.local.firestitch.com/") 	{ return new MAVEN_API($username,$password,$host); }
+		public static function create($username,$password,$host="yourhostnamehere") 	{ return new MAVEN_API($username,$password,$host); }
 		public function set_method($method) 							{ $this->_method = $method; }
 		public function set_data($data) 								{ $this->_data = $data; }
 
