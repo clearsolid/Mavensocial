@@ -15,7 +15,7 @@ class MAVEN_API {
 			$this->_host 		= $host;
 
 		}
-		public static function create($username,$password,$host="yourhostnamehere") 	{ return new MAVEN_API($username,$password,$host); }
+		public static function create($username,$password,$host="https://app.mavensocial.com") 	{ return new MAVEN_API($username,$password,$host); }
 		public function set_method($method) 							{ $this->_method = $method; }
 		public function set_data($data) 								{ $this->_data = $data; }
 
