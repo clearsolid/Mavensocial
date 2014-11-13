@@ -91,7 +91,7 @@ class MAVEN_API {
 			$body = curl_exec($curl);
 
 			if($this->is_debug()) 
-				print_r("body: ".$body); 
+				echo "<pre>".print_r(curl_getinfo($curl),1)."</pre>";
 			
 			if($error_number=curl_errno($curl)) {
 				$error_message = curl_error($curl);
